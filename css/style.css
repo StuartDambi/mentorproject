@@ -1,19 +1,14 @@
 body {
-  font: 15px/1.5 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font: 15px/1.5 'Roboto Cn';
   padding: 0;
   margin: 0;
   background-color: #f4f4f4;
-
 }
 /* Global CSS */
 .container {
   width: 80%;
   margin: auto;
   overflow: hidden;
-}
-ul {
-  margin: 0;
-  padding: 0;
 }
 .button_1 {
   height: 38px;
@@ -26,49 +21,82 @@ ul {
 }
 /* Header */
 header {
-  background: #ccc;
-  color: black;
-  padding-top: 30px;
-  min-height: 70px;
-  border-bottom: #0931b3 1px solid;
-  position: -webkit-sticky;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, .8), rgba(0, 0, 0, .5)), url('../images/showcase.jpg') center no-repeat;
+  padding-top: 3px;
 }
-header a {
-  color: black;
-  text-decoration: none;
-  font-size: 16px;
+.main {
+  max-width: 120rem;
+  width: 90%;
+  margin: 0 auto;
 }
-header li {
-  float: left;
-  display: inline;
-  padding: 0 20px 0 20px;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.0rem;
+  z-index: 1;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .5));
 }
-header #branding {
-  float: left;
-}
-header #branding h1 {
-  margin: 0;
-}
-header nav {
-  float: right;
-  margin-top: 10px;
-}
-header .highlight, header .current a {
-  color: #0931b3;
-  font-weight: bold;
-}
-header a:hover {
-  color: #0931b3;
-  font-weight: bold;
-}
-.logo {
+.brand {
+  font-size: 2rem;
+  font-weight: 300;
   font-family: cursive;
+  color: #0931b3;
+  padding-top: 0px;
+  animation: slideIn .5s forwards;
+}
+nav h1 a {
+  text-decoration: none;
+}
+nav ul {
+  display: flex;
+  padding-left: 40%;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  padding: 0;
+  margin: 0 2rem;
+  position: relative;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: #ccc;
+}
+nav ul li a:last-child {
+  margin-right: 0;
+}
+nav ul li a::before,
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #0931b3;
+  left: 0;
+  transform: scaleX(0);
+  transition: all .5s;
+}
+nav ul li a::before {
+  top: 0;
+  transform-origin: left;
+}
+nav ul li a::after {
+  bottom: 0;
+  transform-origin: right;
+}
+nav ul li a:hover::before,
+nav ul li a:hover::after {
+  transform: scaleX(1);
 }
 
 /* Showcase */
 #showcase {
+  padding-top: 180px;
   min-height: 400px;
-  background: url('../images/showcase.jpg') no-repeat 0 -400px;
   text-align: center;
   color: white
 }
@@ -125,8 +153,10 @@ footer {
 
 /* Media Queries */
 @media(max-width: 768px) {
-  header #branding,
+  header .main,
+  header .brand,
   header nav,
+  header nav ul,
   header nav li,
   #search h1,
   #search form,
