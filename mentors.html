@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sessions</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/mentors.css">
+</head>
+<body>
+    <ul class="top-nav">
+        <li class="left"><a href="#"><img src="images/mentor-logo3.png"></a></li>
+        <li>
+            <div class="search-bar">
+                <form>
+                    <input type="text" placeholder="Searh Mentor">
+                    <button type="submit" class="button_1">Search</button>
+                </form>
+            </div>
+        </li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="signup.html">Register</a></li>
+        <li><a href="#">Notifications <span class="badge">8</span></a></li>
+        <li><a href="#">Mentors</a></li>
+        <li><a href="#">Sessions</a></li>
+        <li><a href="#" class="active">Home</a></li>
+    </ul>
+    <!-- ShowCase -->
+    <div class="container">
+        <section class="show-case">
+            <h1>Mentors</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicin</p>
+        </section>
+    </div>
+
+    <!-- The mentors -->
+    <div class="container">
+        <section class="mentors">
+            
+<center><h1>Meet the Mentors</h1></center>
+
+<div class="card-list">
+  <div class="card" onclick="flipCard(this)">
+    <div class="card__back">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula enim quis lorem semper, non vulputate tortor auctor. In hac habitasse platea dictumst. Donec ac lorem ante.</p>
+    </div>
+    <div class="card__front">
+      <img src="images/author.png" alt="">
+    </div>
+  </div>
+
+  <div class="card" onclick="flipCard(this)">
+    <div class="card__back">
+      <p>Vestibulum elementum quam quis sem scelerisque, nec posuere leo sollicitudin. Quisque sed quam id ligula semper pellentesque cursus eu lectus. Sed congue orci quis nisi pulvinar, eu varius risus lacinia.</p>
+    </div>
+    <div class="card__front">
+      <img src="images/author.png" alt="">
+    </div>
+  </div>
+  <div class="card" onclick="flipCard(this)">
+    <div class="card__back">
+      <p>Donec sit amet mi rhoncus, tincidunt nulla vitae, pellentesque lectus.</p>
+    </div>
+    <div class="card__front">
+      <img src="images/author.png" alt="">
+    </div>
+  </div>
+</div>
+        </section>
+    </div>
+      
+      <!-- Register Section -->
+      <section id="reg">
+          <div class="slot">
+              <h1>Join Our Community Now!</h1>
+              <a href=""><button class="button_1" onclick="document.getElementById('id01').style.display='block'">Register Now</button></a>
+          </div>
+      </section>
+
+      <!-- Signin Form  -->
+     
+
+      <footer>
+        <p>You can Mentor Incopration, Copyright &copy; 2019</p>
+      </footer>
+<script>
+function flipCard(self) {
+  self.classList.toggle('card--flipped');
+}
+</script>
+</body>
+<script src="js/main.js"></script>
+</html>
