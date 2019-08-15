@@ -66,72 +66,67 @@ body {
     color: wheat;
     padding-top: 0;
   }
-.container .show-case h1 {
+.container .show-case .show-title {
+    font-size: 3rem;
     padding-top: 50px;
 }
 
 /* The mentors Section */
-.card-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .card {
-    position: relative;
-    height: 300px;
-    width: 225px;
-    cursor: pointer;
-  }
-  .card + .card {
-    margin-left: 30px;
-  }
-  .card .card__front,
-  .card .card__back {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 1px 2px 4px #333;
-    height: 300px;
-    width: 225px;
-    transition: transform 0.5s;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-  }
-  .card:not(.card--flipped) .card__back {
-    transform: rotateY(180deg);
-  }
-  .card.card--flipped .card__front {
-    transform: rotateY(180deg);
-  }
-  .card p,
-  .card svg {
-    width: 90%;
-  }
+.main{
 
-  h2 {
-    margin: 30px;
-  }
+  margin: 2%;
+ }
+ 
+ .card{
+      width: 20%;
+      display: inline-block;
+      box-shadow: 2px 2px 20px black;
+      border-radius: 5px; 
+      margin: 2%;
+     }
+ 
+ .image img{
+   width: 100%;
+   border-top-right-radius: 5px;
+   border-top-left-radius: 5px;
+   
+ 
   
-  p,
-  .displayable-style {
-    margin: 20px 30px;
   }
+ 
+ .title{
   
-  .displayable-style {
-    display: block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    font-family: monospace;
+   text-align: center;
+   padding: 10px;
+   
   }
+ 
+ h1{
+   font-size: 20px;
+  }
+ 
+ .des{
+   padding: 3px;
+   text-align: center;
+  
+   padding-top: 10px;
+         border-bottom-right-radius: 5px;
+   border-bottom-left-radius: 5px;
+ }
+ button{
+   margin-top: 40px;
+   margin-bottom: 10px;
+   background-color: white;
+   border: 1px solid black;
+   border-radius: 5px;
+   padding:10px;
+ }
+ button:hover{
+   background-color: black;
+   color: white;
+   transition: .5s;
+   cursor: pointer;
+ }
 
 
   /* Register Section */
