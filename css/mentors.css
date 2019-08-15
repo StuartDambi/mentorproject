@@ -10,13 +10,11 @@ body {
     overflow: hidden;
   }
   .button_1 {
-    height: 38px;
-    background: cyan;
-    border: none;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: white;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: -5rem;
+   background-color: aqua;
+   border: 1px solid aqua;
+   border-radius: 5px;
+   background-color: aqua;
   }
   /* Navigation Bar */
 .top-nav {
@@ -56,6 +54,14 @@ body {
 .left img {
     max-width: 100px;
 }
+  /* Search Area */
+  .top-nav li form input[type='text'] {
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+    font-family: cursive;
+    border-radius: 15px;
+  }
 
 /* Show case */
 .container .show-case {
@@ -116,13 +122,13 @@ body {
  button{
    margin-top: 40px;
    margin-bottom: 10px;
-   background-color: white;
-   border: 1px solid black;
+   background-color: aqua;
+   border: 1px solid aqua;
    border-radius: 5px;
    padding:10px;
  }
  button:hover{
-   background-color: black;
+   background-color:aquamarine;
    color: white;
    transition: .5s;
    cursor: pointer;
