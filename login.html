@@ -4,23 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login</title>
-    <link rel="stylesheet" href="css/auth.css">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/signup.css">
 </head>
 <body>
-   
-    <div class="card">
-        <form action="">
-            <h2>Login</h2>
-            <input type="email" name="email" placeholder="Email" required><br><br><br>
-            <input type="password" name="password" placeholder="Password" required><br><br><br>
-            <a href="congs.html"><input type="button" value="Login"></a><br>
-            <div class="container">
-            <a href="" class="reset">Forgot  Password</a><br><br><br><br><br>
+    <!-- include a wrapping container for the signup form, and two sections, one introducing the form and the other detailing input elements -->
+<div class="signup">
+  
+        <section class="signup__intro">
+          <h2>Log into account</h2>
+          <p>Valid email address,seven letter password accepting numbers</p>
+          <a href="signup.html" style="color: aqua; text-decoration: none;">Or Register Here!</a>
+        </section>
+          
+        <section class="signup__input">
+          <!-- nest all input except the input of type submit in a container (this to have this last element spread the entirety of the container, whilst the other are positioned with some padding) -->
+          <div class="input--fields">
+            <!-- include each input, alongside a label, within a div container -->
+            
+            <div class="input--field">
+              <label for="email">email</label>
+              <input type="email" name="email" id="email">
             </div>
-            Don't have Account?<a href="signup.html">&nbsp;Sign Up</a>
-        </form>
-    </div>
-
+            <div class="input--field">
+              <label for="password">password</label>
+              <input type="password" name="password" id="password">
+            </div>
+      
+            <!-- include a checkbox followed by some explanatory text -->
+            <div class="input--field">
+              <input type="checkbox">
+            <a href="#" class="highlight">Accept terms and Conditions</a>
+            </div>
+      
+          </div><!-- close the div wrapping all input elements except the submit button -->
+      
+          <!-- include an input of type submit -->
+          <input type="submit" value="Login">
+        </section>
+      
+      </div>
 </body>
+<script src="js/smooth.js"></script>
 </html>
