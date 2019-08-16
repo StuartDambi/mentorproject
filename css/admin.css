@@ -435,4 +435,17 @@ html {
       width: 23%;
     }
   }
-  
+
+  .actions {
+    padding: 3px;
+  }
+  .actions li {
+    display: inline;
+  }
+  .actions li a {
+    color: black;
+    background-color: orangered;
+    border: 2px solid orangered;
+    border-radius: 3px;
+    font-family: cursive;
+  }
